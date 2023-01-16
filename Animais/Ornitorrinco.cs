@@ -21,5 +21,11 @@ namespace ClassificacaoAnimais.Animais
 
         public void Botar() => IOviparo.Botar();
         public void Chocar() => IOviparo.Chocar();
+
+        public override void ExibirInformacoes()
+        {
+            base.ExibirInformacoes();
+            IAquatico.InformacoesAquaticas(this);
+        }
     }
 }

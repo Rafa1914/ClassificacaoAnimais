@@ -20,5 +20,11 @@ namespace ClassificacaoAnimais.Animais
         public bool AguaDoce { get; private set; }
         public void Botar() => IOviparo.Botar();
         public void Chocar() => IOviparo.Chocar();
+
+        public override void ExibirInformacoes()
+        {
+            base.ExibirInformacoes();
+            IAquatico.InformacoesAquaticas(this);
+        }
     }
 }

@@ -7,13 +7,11 @@ namespace ClassificacaoAnimais
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
-            //var arara = new Arara();
-            //arara.ExibirInformacoes();
-
             var perry = new Ornitorrinco("Perry", DateTime.Today, 'M');
             perry.Botar();
+            perry.Chocar();
+            perry.Movimentar();
+            perry.ExibirInformacoes();
         }
     }
 }

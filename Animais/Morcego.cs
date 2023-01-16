@@ -16,5 +16,11 @@ namespace ClassificacaoAnimais.Animais
         public int AltitudeMaximaEmMetros { get; private set; }
 
         public double VelocidadeDoVoo { get; private set; }
+
+        public override void ExibirInformacoes()
+        {
+            base.ExibirInformacoes();
+            IVoar.InformacoesDeVoo(this);
+        }
     }
 }
